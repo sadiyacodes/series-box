@@ -1,38 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@300&family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:700,900");
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --lora: "Lora", serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-color: black;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#genre-selector {
+  padding: 1 rem;
+}
+.my-btn {
+  height: 40px;
+  text-align: center;
+  background-color: #e50914;
+  border-radius: 7px;
+  color: white;
+  padding: 6px 30px 6px 30px;
+  cursor: pointer;
+  position: relative;
+  outline: 1px solid;
+  outline-color: rgba(255, 166, 170, 0.5);
+  transition: all 1250ms;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.my-btn:hover {
+  box-shadow: inset 0 0 20px rgba(255, 166, 170, 0.5),
+    0 0 20px rgba(255, 126, 133, 0.2);
+  outline-color: rgba(255, 166, 170, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
 }
+#btn-gaps {
+  margin: 1rem;
+}
+ul {
+  list-style: none;
+  padding-inline-start: 0rem;
+}
+
+li {
+  margin: auto;
+  margin-top: 20px;
+  text-align: left;
+  font-family: "Lora", serif;
+  width: 50%;
+  border-radius: 10px;
+  border: 1px solid #e50914;
+  color: white;
+}
+.my-rating {
+  display: inline-block;
+  background-color: grey;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.3rem;
+  font-family: Roboto;
+  color: white;
+}
+/* @media only screen and (max-width: 520px) {
+  .body {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+  }
+} */
+
